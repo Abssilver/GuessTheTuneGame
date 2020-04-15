@@ -80,6 +80,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "formMain";
             this.Text = "Name The Tune Quiz";
+            this.Load += new System.EventHandler(this.formMain_Load);
             this.ResumeLayout(false);
 
         }

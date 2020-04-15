@@ -34,5 +34,11 @@ namespace GuessTheTune
         {
             game.ShowDialog();
         }
+
+        private void formMain_Load(object sender, EventArgs e)
+        {
+            Quiz.ReadParams();
+            Quiz.ReadMusic();
+        }
     }
 }

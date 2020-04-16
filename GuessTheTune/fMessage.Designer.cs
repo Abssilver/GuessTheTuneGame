@@ -41,34 +41,50 @@
             // labelMessage
             // 
             this.labelMessage.AutoSize = true;
-            this.labelMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelMessage.Location = new System.Drawing.Point(61, 78);
+            this.labelMessage.BackColor = System.Drawing.Color.Transparent;
+            this.labelMessage.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMessage.ForeColor = System.Drawing.Color.Moccasin;
+            this.labelMessage.Location = new System.Drawing.Point(43, 81);
             this.labelMessage.Name = "labelMessage";
-            this.labelMessage.Size = new System.Drawing.Size(355, 29);
+            this.labelMessage.Size = new System.Drawing.Size(390, 27);
             this.labelMessage.TabIndex = 0;
             this.labelMessage.Text = "Is the Player 2\'s answer correct?";
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.DialogResult = System.Windows.Forms.DialogResult.Yes;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(133, 182);
+            this.button1.Location = new System.Drawing.Point(164, 182);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 42);
+            this.button1.Size = new System.Drawing.Size(60, 60);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Yes";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = global::GuessTheTune.Properties.Resources.icons8_delete_96;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.DialogResult = System.Windows.Forms.DialogResult.No;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.Location = new System.Drawing.Point(258, 186);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 42);
+            this.button2.Size = new System.Drawing.Size(60, 60);
             this.button2.TabIndex = 2;
-            this.button2.Text = "No";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // checkAnswerTimer
             // 
@@ -78,17 +94,19 @@
             // labelTimer
             // 
             this.labelTimer.AutoSize = true;
-            this.labelTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelTimer.Location = new System.Drawing.Point(398, 186);
+            this.labelTimer.BackColor = System.Drawing.Color.Transparent;
+            this.labelTimer.Font = new System.Drawing.Font("Magneto", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTimer.ForeColor = System.Drawing.Color.Moccasin;
+            this.labelTimer.Location = new System.Drawing.Point(396, 187);
             this.labelTimer.Name = "labelTimer";
-            this.labelTimer.Size = new System.Drawing.Size(35, 38);
+            this.labelTimer.Size = new System.Drawing.Size(57, 53);
             this.labelTimer.TabIndex = 3;
             this.labelTimer.Text = "0";
             // 
             // labelShowAnswer
             // 
             this.labelShowAnswer.BackColor = System.Drawing.Color.Transparent;
-            this.labelShowAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelShowAnswer.Font = new System.Drawing.Font("Lucida Calligraphy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelShowAnswer.ForeColor = System.Drawing.SystemColors.Control;
             this.labelShowAnswer.Location = new System.Drawing.Point(66, 133);
             this.labelShowAnswer.Name = "labelShowAnswer";
@@ -102,13 +120,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::GuessTheTune.Properties.Resources.backgroundMelody;
-            this.ClientSize = new System.Drawing.Size(475, 249);
+            this.BackgroundImage = global::GuessTheTune.Properties.Resources.backgroundMelody820x512;
+            this.ClientSize = new System.Drawing.Size(482, 253);
             this.Controls.Add(this.labelShowAnswer);
             this.Controls.Add(this.labelTimer);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.labelMessage);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fMessage";
             this.Text = "AnswerCheck";

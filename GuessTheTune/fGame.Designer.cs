@@ -58,32 +58,43 @@
             // 
             // buttonGameNext
             // 
+            this.buttonGameNext.BackColor = System.Drawing.Color.Transparent;
+            this.buttonGameNext.BackgroundImage = global::GuessTheTune.Properties.Resources.icons8_forward_button_96;
+            this.buttonGameNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonGameNext.FlatAppearance.BorderSize = 0;
+            this.buttonGameNext.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.buttonGameNext.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonGameNext.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonGameNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonGameNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonGameNext.Location = new System.Drawing.Point(278, 161);
+            this.buttonGameNext.Location = new System.Drawing.Point(330, 133);
             this.buttonGameNext.Name = "buttonGameNext";
-            this.buttonGameNext.Size = new System.Drawing.Size(232, 66);
+            this.buttonGameNext.Size = new System.Drawing.Size(96, 96);
             this.buttonGameNext.TabIndex = 1;
-            this.buttonGameNext.Text = "Next";
-            this.buttonGameNext.UseVisualStyleBackColor = true;
+            this.buttonGameNext.UseVisualStyleBackColor = false;
             this.buttonGameNext.Click += new System.EventHandler(this.buttonGameNext_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(602, 66);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Magneto", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Salmon;
+            this.label1.Location = new System.Drawing.Point(596, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 32);
+            this.label1.Size = new System.Drawing.Size(147, 32);
             this.label1.TabIndex = 2;
             this.label1.Text = "Player 2";
             // 
             // labelPlayer2Score
             // 
             this.labelPlayer2Score.AutoSize = true;
-            this.labelPlayer2Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelPlayer2Score.Location = new System.Drawing.Point(642, 133);
+            this.labelPlayer2Score.BackColor = System.Drawing.Color.Transparent;
+            this.labelPlayer2Score.Font = new System.Drawing.Font("Magneto", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPlayer2Score.ForeColor = System.Drawing.Color.Moccasin;
+            this.labelPlayer2Score.Location = new System.Drawing.Point(633, 118);
             this.labelPlayer2Score.Name = "labelPlayer2Score";
-            this.labelPlayer2Score.Size = new System.Drawing.Size(31, 32);
+            this.labelPlayer2Score.Size = new System.Drawing.Size(56, 52);
             this.labelPlayer2Score.TabIndex = 3;
             this.labelPlayer2Score.Text = "0";
             this.labelPlayer2Score.MouseClick += new System.Windows.Forms.MouseEventHandler(this.labelPlayer1Score_MouseClick);
@@ -91,55 +102,75 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(71, 66);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Magneto", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Salmon;
+            this.label3.Location = new System.Drawing.Point(65, 70);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 32);
+            this.label3.Size = new System.Drawing.Size(140, 32);
             this.label3.TabIndex = 4;
             this.label3.Text = "Player 1";
             // 
             // labelPlayer1Score
             // 
             this.labelPlayer1Score.AutoSize = true;
-            this.labelPlayer1Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelPlayer1Score.Location = new System.Drawing.Point(114, 133);
+            this.labelPlayer1Score.BackColor = System.Drawing.Color.Transparent;
+            this.labelPlayer1Score.Font = new System.Drawing.Font("Magneto", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPlayer1Score.ForeColor = System.Drawing.Color.Moccasin;
+            this.labelPlayer1Score.Location = new System.Drawing.Point(98, 118);
             this.labelPlayer1Score.Name = "labelPlayer1Score";
-            this.labelPlayer1Score.Size = new System.Drawing.Size(31, 32);
+            this.labelPlayer1Score.Size = new System.Drawing.Size(56, 52);
             this.labelPlayer1Score.TabIndex = 5;
             this.labelPlayer1Score.Text = "0";
             this.labelPlayer1Score.MouseClick += new System.Windows.Forms.MouseEventHandler(this.labelPlayer1Score_MouseClick);
             // 
             // buttonPause
             // 
+            this.buttonPause.BackColor = System.Drawing.Color.Transparent;
+            this.buttonPause.BackgroundImage = global::GuessTheTune.Properties.Resources.icons8_pause_button_96;
+            this.buttonPause.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonPause.FlatAppearance.BorderSize = 0;
+            this.buttonPause.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.buttonPause.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonPause.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonPause.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPause.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonPause.Location = new System.Drawing.Point(241, 266);
+            this.buttonPause.Location = new System.Drawing.Point(276, 235);
             this.buttonPause.Name = "buttonPause";
-            this.buttonPause.Size = new System.Drawing.Size(121, 59);
+            this.buttonPause.Size = new System.Drawing.Size(96, 96);
             this.buttonPause.TabIndex = 6;
-            this.buttonPause.Text = "Pause";
-            this.buttonPause.UseVisualStyleBackColor = true;
+            this.buttonPause.UseVisualStyleBackColor = false;
             this.buttonPause.Click += new System.EventHandler(this.buttonPause_Click);
             // 
             // buttonContinue
             // 
+            this.buttonContinue.BackColor = System.Drawing.Color.Transparent;
+            this.buttonContinue.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonContinue.BackgroundImage")));
+            this.buttonContinue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonContinue.FlatAppearance.BorderSize = 0;
+            this.buttonContinue.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.buttonContinue.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonContinue.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonContinue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonContinue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonContinue.Location = new System.Drawing.Point(422, 266);
+            this.buttonContinue.Location = new System.Drawing.Point(389, 235);
             this.buttonContinue.Name = "buttonContinue";
-            this.buttonContinue.Size = new System.Drawing.Size(121, 59);
+            this.buttonContinue.Size = new System.Drawing.Size(96, 96);
             this.buttonContinue.TabIndex = 7;
-            this.buttonContinue.Text = "Continue";
-            this.buttonContinue.UseVisualStyleBackColor = true;
+            this.buttonContinue.UseVisualStyleBackColor = false;
             this.buttonContinue.Click += new System.EventHandler(this.buttonContinue_Click);
             // 
             // labelSongLeft
             // 
             this.labelSongLeft.AutoSize = true;
-            this.labelSongLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelSongLeft.Location = new System.Drawing.Point(373, 90);
+            this.labelSongLeft.BackColor = System.Drawing.Color.Transparent;
+            this.labelSongLeft.Font = new System.Drawing.Font("Magneto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSongLeft.ForeColor = System.Drawing.Color.Moccasin;
+            this.labelSongLeft.Location = new System.Drawing.Point(530, 396);
             this.labelSongLeft.Name = "labelSongLeft";
-            this.labelSongLeft.Size = new System.Drawing.Size(42, 46);
+            this.labelSongLeft.Size = new System.Drawing.Size(213, 36);
             this.labelSongLeft.TabIndex = 8;
-            this.labelSongLeft.Text = "0";
+            this.labelSongLeft.Text = "Song left: 0";
             // 
             // progressBarOfSong
             // 
@@ -156,20 +187,23 @@
             // 
             // labelMusicDuration
             // 
-            this.labelMusicDuration.AutoSize = true;
-            this.labelMusicDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelMusicDuration.Location = new System.Drawing.Point(373, 395);
+            this.labelMusicDuration.BackColor = System.Drawing.Color.Transparent;
+            this.labelMusicDuration.Font = new System.Drawing.Font("Magneto", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMusicDuration.ForeColor = System.Drawing.Color.Moccasin;
+            this.labelMusicDuration.Location = new System.Drawing.Point(330, 70);
             this.labelMusicDuration.Name = "labelMusicDuration";
-            this.labelMusicDuration.Size = new System.Drawing.Size(35, 38);
+            this.labelMusicDuration.Size = new System.Drawing.Size(96, 46);
             this.labelMusicDuration.TabIndex = 10;
             this.labelMusicDuration.Text = "0";
+            this.labelMusicDuration.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // fGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::GuessTheTune.Properties.Resources.backgroundMelody;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::GuessTheTune.Properties.Resources.backgroundMelody820x512;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(802, 465);
             this.Controls.Add(this.labelMusicDuration);
             this.Controls.Add(this.progressBarOfSong);
             this.Controls.Add(this.labelSongLeft);
@@ -181,6 +215,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonGameNext);
             this.Controls.Add(this.WMediaPlayer);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "fGame";

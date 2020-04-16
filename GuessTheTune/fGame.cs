@@ -15,6 +15,7 @@ namespace GuessTheTune
     {
         Random rnd = new Random();
         int musicDuration = Quiz.musicDuration;
+        bool[] playerTouchButton = new bool[2];
         public fGame()
         {
             InitializeComponent();
@@ -32,6 +33,8 @@ namespace GuessTheTune
                 //WMediaPlayer.Ctlcontrols.play();
                 Quiz.allMusicList.RemoveAt(indexNumber);
                 labelSongLeft.Text = Quiz.allMusicList.Count.ToString();
+                playerTouchButton[0] = false;
+                playerTouchButton[1] = false;
             }
         }
         private void buttonGameNext_Click(object sender, EventArgs e)
@@ -98,20 +101,22 @@ namespace GuessTheTune
 
         private void fGame_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyData==Keys.A)
+            if (!gameTimer.Enabled) return;
+            if (!playerTouchButton[0] && e.KeyData==Keys.A)
             {
                 PauseGame();
                 fMessage fmessage = new fMessage();
                 fmessage.labelMessage.Text = "Is the Player 1's answer correct?";
                 SoundPlayer splayer = new SoundPlayer(@"Resources\player1.wav");
                 splayer.PlaySync();
+                playerTouchButton[0] = true;
                 if (fmessage.ShowDialog()==DialogResult.Yes)
                 {
                     labelPlayer1Score.Text = Convert.ToString(Convert.ToInt32(labelPlayer1Score.Text) + 1);
                     GenerateSong();
                 }
                 ResumeGame();
-            } else if (e.KeyData == Keys.L)
+            } else if (!playerTouchButton[1] && e.KeyData == Keys.L)
                 {
                     PauseGame();
                 //if (MessageBox.Show("Is it right answer?", "Player 2 answer", MessageBoxButtons.YesNo) == DialogResult.Yes)
@@ -119,6 +124,7 @@ namespace GuessTheTune
                 fmessage.labelMessage.Text = "Is the Player 2's answer correct?";
                 SoundPlayer splayer = new SoundPlayer(@"Resources\player2.wav");
                 splayer.PlaySync();
+                playerTouchButton[1] = true;
                 if (fmessage.ShowDialog() == DialogResult.Yes)
                 {
                         labelPlayer2Score.Text = Convert.ToString(Convert.ToInt32(labelPlayer2Score.Text) + 1);

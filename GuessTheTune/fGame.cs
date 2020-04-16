@@ -34,7 +34,7 @@ namespace GuessTheTune
                 Quiz.songName = WMediaPlayer.URL;
                 //WMediaPlayer.Ctlcontrols.play();
                 Quiz.allMusicList.RemoveAt(indexNumber);
-                labelSongLeft.Text = Quiz.allMusicList.Count.ToString();
+                labelSongLeft.Text = $"Song left: {Quiz.allMusicList.Count.ToString()}";
                 playerTouchButton[0] = false;
                 playerTouchButton[1] = false;
             }
@@ -58,7 +58,7 @@ namespace GuessTheTune
         }
         private void GameSetup()
         {
-            labelSongLeft.Text = Quiz.allMusicList.Count.ToString();
+            labelSongLeft.Text = $"Song left: {Quiz.allMusicList.Count.ToString()}";
             progressBarOfSong.Value = 0;
             progressBarOfSong.Minimum = 0;
             progressBarOfSong.Maximum = Quiz.gameDuration;

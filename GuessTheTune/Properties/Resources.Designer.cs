@@ -63,9 +63,9 @@ namespace GuessTheTune.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap backgroundMelody {
+        internal static System.Drawing.Bitmap backgroundMelody_ver2_500x500 {
             get {
-                object obj = ResourceManager.GetObject("backgroundMelody", resourceCulture);
+                object obj = ResourceManager.GetObject("backgroundMelody_ver2_500x500", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,69 @@ namespace GuessTheTune.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap backgroundMelody_ver2 {
+        internal static System.Drawing.Bitmap backgroundMelody820x512 {
             get {
-                object obj = ResourceManager.GetObject("backgroundMelody_ver2", resourceCulture);
+                object obj = ResourceManager.GetObject("backgroundMelody820x512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ButtonImage {
+            get {
+                object obj = ResourceManager.GetObject("ButtonImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_checkmark_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-checkmark-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_delete_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-delete-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_forward_button_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-forward-button-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_pause_button_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-pause-button-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_play_button_circled_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-play-button-circled-96", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using TagLib;
 
 namespace GuessTheTune
 {
@@ -44,7 +45,8 @@ namespace GuessTheTune
 
         private void labelShowAnswer_Click(object sender, EventArgs e)
         {
-            labelShowAnswer.Text = Quiz.songName;
+            var mp3file = File.Create(Quiz.songName);
+            labelShowAnswer.Text = $"{mp3file.Tag.FirstAlbumArtist} {mp3file.Tag.Title}";
         }
     }
 }

@@ -30,7 +30,8 @@ namespace GuessTheTune
                 musicDuration = Quiz.musicDuration;
                 int indexNumber = rnd.Next(0, Quiz.allMusicList.Count);
                 WMediaPlayer.URL = Quiz.allMusicList[indexNumber];
-                Quiz.songName = System.IO.Path.GetFileNameWithoutExtension(WMediaPlayer.URL);
+                //Quiz.songName = System.IO.Path.GetFileNameWithoutExtension(WMediaPlayer.URL);
+                Quiz.songName = WMediaPlayer.URL;
                 //WMediaPlayer.Ctlcontrols.play();
                 Quiz.allMusicList.RemoveAt(indexNumber);
                 labelSongLeft.Text = Quiz.allMusicList.Count.ToString();

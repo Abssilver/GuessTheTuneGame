@@ -41,5 +41,10 @@ namespace GuessTheTune
         {
             checkAnswerTimer.Stop();
         }
+
+        private void labelShowAnswer_Click(object sender, EventArgs e)
+        {
+            labelShowAnswer.Text = Quiz.songName;
+        }
     }
 }

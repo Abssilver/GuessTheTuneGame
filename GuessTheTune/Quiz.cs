@@ -17,6 +17,7 @@ namespace GuessTheTune
         static public string lastFolderPath = "";
         static public bool searchInSubfolders = false;
         static string regKeyName = "Software\\C-sharpGames\\Quiz";
+        static public string songName = "";
         public static void ReadMusic()
         {
             try
